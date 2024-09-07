@@ -1,0 +1,52 @@
+﻿@inherits LayoutComponentBase
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniProjWebBlazor</title>
+    <base href="/" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" />
+
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <NavMenu />
+    @Body
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Todo List. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="#" class="text-white">Privacy Policy</a>
+                    |
+                    <a href="#" class="text-white">Terms of Service</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+@code {
+    private void HandleClick()
+    {
+        // Logika event handler
+        Console.WriteLine("Tombol diklik!");
+    }
+}

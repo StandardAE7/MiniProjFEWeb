@@ -1,0 +1,171 @@
+﻿@page "/"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<PageTitle>Todo Home</PageTitle>
+
+<!-- Form Card at the top of Todo View -->
+<div class="container mt-5 mb-4">
+    <div class="card rounded-lg shadow-lg no-hover">
+        <div class="card-body">
+            <h3 class="card-title mb-2">Add New Todo</h3>
+            <!-- Form -->
+            <!-- Removed form tag to prevent the default form submission -->
+            <div id="addTodoForm">
+                <div class="form-group">
+                    <label for="note">Note</label>
+                    <input type="text" class="form-control @noteClass" id="note" @bind="newTodo.Note" placeholder="Enter note">
+                    @if (string.IsNullOrEmpty(newTodo.Note))
+                    {
+                        <div class="text-danger">Note is required</div>
+                    }
+                </div>
+                <div class="form-group">
+                    <label for="day">Day</label>
+                    <input type="text" class="form-control @dayClass" id="day" @bind="newTodo.Day" placeholder="Enter day">
+                    @if (string.IsNullOrEmpty(newTodo.Day))
+                    {
+                        <div class="text-danger">Day is required</div>
+                    }
+                </div>
+                <!-- Ensure the button uses @onclick and not a submit -->
+                <button type="button" class="button-addtodo" @onclick="AddTodo">Add Task</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Todo View -->
+@if (todos != null)
+{
+    @foreach (var todo in todos)
+    {
+        <div class="container mt-3">
+            <div class="card rounded-lg shadow-lg" @onclick="() => NavigateToTodoDetail(todo.TodoId)" style="cursor:pointer;">
+                <div class="card-body">
+                    <h3 class="card-title mb-2">@todo.Note</h3>
+                    <h5 class="card-subtitle mb-2 text-muted">@todo.Day</h5>
+                    <h5 class="card-subtitle mb-2 text-muted">@todo.TodoDetails.Count Task(s)</h5> <!-- Displaying the correct task count -->
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p>Loading todos...</p>
+}
+
+@code {
+    private TodoItem newTodo = new TodoItem();
+    private List<TodoItem> todos = new List<TodoItem>();
+
+    // CSS classes for input validation
+    private string noteClass = "";
+    private string dayClass = "";
+
+    private void TestButtonClick()
+    {
+        Console.WriteLine("Test button clicked");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("FETCHIN DATA...");
+        await FetchTodos();
+    }
+
+    private void NavigateToTodoDetail(string todoId)
+    {
+        Console.WriteLine($"Navigating to todo with ID: {todoId}");
+        NavigationManager.NavigateTo($"/todo/{todoId}");
+    }
+
+    private async Task FetchTodos()
+    {
+        try
+        {
+            todos = await Http.GetFromJsonAsync<List<TodoItem>>("api/v1/todo?pageNumber=1&pageSize=1000");
+        }
+        catch (Exception ex)
+        {
+            // Handle error
+            Console.WriteLine("Error fetching todos: " + ex.Message);
+        }
+    }
+
+    private async Task AddTodo()
+    {
+        // Log for debugging
+        Console.WriteLine("AddTodo button clicked");
+
+        // Log untuk debugging
+        Console.WriteLine($"Note: {newTodo.Note}");
+        Console.WriteLine($"Day: {newTodo.Day}");
+
+        // Reset CSS classes
+        noteClass = string.IsNullOrEmpty(newTodo.Note) ? "is-invalid" : "";
+        dayClass = string.IsNullOrEmpty(newTodo.Day) ? "is-invalid" : "";
+
+        // Jika field kosong, jangan lanjutkan
+        if (string.IsNullOrEmpty(newTodo.Note) || string.IsNullOrEmpty(newTodo.Day))
+        {
+            Console.WriteLine("Validation failed: Fields are missing");
+            return; // Stop jika validasi gagal
+        }
+
+        try
+        {
+            // Kirim data ke API
+            var todoData = new
+            {
+                day = newTodo.Day,
+                note = newTodo.Note
+            };
+
+            Console.WriteLine("Sending request to API...");
+            var response = await Http.PostAsJsonAsync("api/v1/todo", todoData);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Todo added successfully");
+
+                // Clear the form after successful submission
+                newTodo = new TodoItem();
+
+                // Clear validation classes
+                noteClass = "";
+                dayClass = "";
+
+                // Refresh the list of todos
+                await FetchTodos();
+            }
+            else
+            {
+                Console.WriteLine("Error adding todo: " + response.ReasonPhrase);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error during AddTodo: " + ex.Message);
+        }
+    }
+
+
+    public class TodoItem
+    {
+        public string TodoId { get; set; }
+        public string Day { get; set; }
+        public string Note { get; set; }
+        public List<TodoDetail> TodoDetails { get; set; } = new();
+    }
+
+    public class TodoDetail
+    {
+        public string TodoDetailId { get; set; }
+        public string TodoId { get; set; }
+        public string Activity { get; set; }
+        public string Category { get; set; }
+        public string DetailNote { get; set; }
+    }
+}

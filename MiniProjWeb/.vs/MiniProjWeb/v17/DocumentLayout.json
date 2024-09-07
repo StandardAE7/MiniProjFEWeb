@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|d:\\bootcaml frontend web\\wok\\blazor\\miniprojweb\\miniprojweb\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|solutionrelative:miniprojweb\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|d:\\bootcaml frontend web\\wok\\blazor\\miniprojweb\\miniprojweb\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|solutionrelative:miniprojweb\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|d:\\bootcaml frontend web\\wok\\blazor\\miniprojweb\\miniprojweb\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|solutionrelative:miniprojweb\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|d:\\bootcaml frontend web\\wok\\blazor\\miniprojweb\\miniprojweb\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|solutionrelative:miniprojweb\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|d:\\bootcaml frontend web\\wok\\blazor\\miniprojweb\\miniprojweb\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|solutionrelative:miniprojweb\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|d:\\bootcaml frontend web\\wok\\blazor\\miniprojweb\\miniprojweb\\components\\pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|solutionrelative:miniprojweb\\components\\pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|d:\\bootcaml frontend web\\wok\\blazor\\miniprojweb\\miniprojweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|solutionrelative:miniprojweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|d:\\bootcaml frontend web\\wok\\blazor\\miniprojweb\\miniprojweb\\components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F8C9823-CD16-4A0D-ACC8-76B73FBBC803}|MiniProjWeb\\MiniProjWeb.csproj|solutionrelative:miniprojweb\\components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "MiniProjWeb\\Components\\Routes.razor",
+              "ToolTip": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Routes.razor",
+              "RelativeToolTip": "MiniProjWeb\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T12:07:08.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Todo.razor",
+              "DocumentMoniker": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Pages\\Todo.razor",
+              "RelativeDocumentMoniker": "MiniProjWeb\\Components\\Pages\\Todo.razor",
+              "ToolTip": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Pages\\Todo.razor",
+              "RelativeToolTip": "MiniProjWeb\\Components\\Pages\\Todo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T12:05:28.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "MiniProjWeb\\wwwroot\\app.css",
+              "ToolTip": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\wwwroot\\app.css",
+              "RelativeToolTip": "MiniProjWeb\\wwwroot\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-06T12:03:21.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Program.cs",
+              "RelativeDocumentMoniker": "MiniProjWeb\\Program.cs",
+              "ToolTip": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Program.cs",
+              "RelativeToolTip": "MiniProjWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T12:02:12.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "MiniProjWeb\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "MiniProjWeb\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAABMAAAAAAAAAAIAwwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T12:01:41.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginLayout.razor",
+              "DocumentMoniker": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Layout\\LoginLayout.razor",
+              "RelativeDocumentMoniker": "MiniProjWeb\\Components\\Layout\\LoginLayout.razor",
+              "ToolTip": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Layout\\LoginLayout.razor",
+              "RelativeToolTip": "MiniProjWeb\\Components\\Layout\\LoginLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T12:01:18.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "MiniProjWeb\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "MiniProjWeb\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T12:01:00.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "MiniProjWeb\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\bootcaml frontend web\\wok\\blazor\\MiniProjWeb\\MiniProjWeb\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "MiniProjWeb\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T11:59:48.69Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
